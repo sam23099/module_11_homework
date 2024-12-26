@@ -1,0 +1,12 @@
+function countAndOrderEverySecond (number1 , number2){
+    let progress = number1;
+    let timerId = setInterval(function(){
+    if (progress <= number2 ){
+        console.log(progress);
+        progress++
+    }else
+        clearInterval(timerId);
+    },1000)
+    }
+
+    countAndOrderEverySecond(5,15);
